@@ -12,14 +12,17 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link href="{%static 'css/styles.css'%}" rel="stylesheet" />
   </head>
   <body>
     <div>
-      <img src="{%static 'images/logo-dj.png'%}" width="200px" />
-      <h1>DJANGO SHOP</h1>
+      <div">
+        <img src="{%static 'images/dj.png'%}" width="200px" />
+        <h1>DJANGO SHOP</h1>
+      </div>
+      <a href="{%url 'rElectronica'%}" class="btn btn-info">Electrónica</a>
+      <a href="{%url 'rJuguetes'%}" class="btn btn-success">Juguetes</a>
+      <a href="{%url 'rRopa'%}" class="btn btn-warning">Ropa</a>
     </div>
-    <a href="{%url 'rElectronica'%}" class="btn btn-info">Electrónica</a>
-    <a href="{%url 'rJuguetes'%}" class="btn btn-success">Juguetes</a>
-    <a href="{%url 'rRopa'%}" class="btn btn-warning">Ropa</a>
   </body>
 </html>
