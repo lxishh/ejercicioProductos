@@ -14,12 +14,14 @@
     />
   </head>
   <body>
+    <img src="{%static 'images/logo-dj.png'%}" width="200px" />
+    <h1>DJANGO SHOP</h1>
+    <h2>{{titulo}}</h2>
     <div>
-      <img src="{%static 'images/logo-dj.png'%}" width="200px" />
-      <h1>DJANGO SHOP</h1>
+      <p>{{p1}}</p>
+      <p>{{p2}}</p>
+      <p>{{p3}}</p>
     </div>
-    <a href="{%url 'rElectronica'%}" class="btn btn-info">Electrónica</a>
-    <a href="{%url 'rJuguetes'%}" class="btn btn-success">Juguetes</a>
-    <a href="{%url 'rRopa'%}" class="btn btn-warning">Ropa</a>
+    <a href="{%url 'rTienda' %}" class="btn btn-info">Volver</a>
   </body>
 </html>
